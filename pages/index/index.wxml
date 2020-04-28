@@ -22,7 +22,8 @@
           </view>
           <view class="text-box padding-xs">
             <view class="por_name fs26">
-              <text class="flag fs24 margin-right-xs">满减</text>Stussy   拼色连帽卫衣 拼色连帽卫衣
+              <text class="flag fs24 margin-right-xs">满减</text>
+              Stussy   拼色连帽卫衣 拼色连帽卫衣
             </view>
           </view>
         </view>
@@ -30,25 +31,55 @@
           <view class="img-box">
             <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
           </view>
-        </view>
-        <view class="scroll-item margin-right-sm">
-          <view class="img-box">
-            <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+          <view class="text-box padding-xs">
+            <view class="por_name fs26">
+              <text class="flag fs24 margin-right-xs">满减</text>
+              Stussy   拼色连帽卫衣 拼色连帽卫衣
+            </view>
           </view>
         </view>
         <view class="scroll-item margin-right-sm">
           <view class="img-box">
             <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
           </view>
-        </view>
-        <view class="scroll-item margin-right-sm">
-          <view class="img-box">
-            <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+          <view class="text-box padding-xs">
+            <view class="por_name fs26">
+              <text class="flag fs24 margin-right-xs">满减</text>
+              Stussy   拼色连帽卫衣 拼色连帽卫衣
+            </view>
           </view>
         </view>
         <view class="scroll-item margin-right-sm">
           <view class="img-box">
             <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+          </view>
+          <view class="text-box padding-xs">
+            <view class="por_name fs26">
+              <text class="flag fs24 margin-right-xs">满减</text>
+              Stussy   拼色连帽卫衣 拼色连帽卫衣
+            </view>
+          </view>
+        </view>
+        <view class="scroll-item margin-right-sm">
+          <view class="img-box">
+            <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+          </view>
+          <view class="text-box padding-xs">
+            <view class="por_name fs26">
+              <text class="flag fs24 margin-right-xs">满减</text>
+              Stussy   拼色连帽卫衣 拼色连帽卫衣
+            </view>
+          </view>
+        </view>
+        <view class="scroll-item margin-right-sm">
+          <view class="img-box">
+            <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+          </view>
+          <view class="text-box padding-xs">
+            <view class="por_name fs26">
+              <text class="flag fs24 margin-right-xs">满减</text>
+              Stussy   拼色连帽卫衣 拼色连帽卫衣
+            </view>
           </view>
         </view>
       </scroll-view>
@@ -56,9 +87,7 @@
     <view class="list-box padding-lr flex-between flex-wrap">
       <view class="list-item">
         <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
-                    <view class="por_name">
-              Stussy   拼色连帽卫衣 拼色连帽卫衣
-            </view>
+        <view class="por_name">Stussy   拼色连帽卫衣 拼色连帽卫衣</view>
       </view>
       <view class="list-item">
         <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
