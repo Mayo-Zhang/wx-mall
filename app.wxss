@@ -11,6 +11,7 @@ image {width: 100%;}
 .margin-right-xs {margin-right: 10rpx;}
 .margin-right-sm {margin-right: 20rpx;}
 .padding-xs {padding: 10rpx;}
+.padding-sm {padding: 20rpx;}
 .padding {padding: 30rpx;}
 .padding-tb {padding: 30rpx 0;}
 .padding-lr-sm {padding: 0 24rpx;}
@@ -19,6 +20,8 @@ image {width: 100%;}
 /* 字体 */
 .text-center {text-align: center;}
 .text-bold {font-weight: bold;}
+
+.fs20 {font-size: 20rpx;}
 
 .fs24 {font-size: 24rpx;}
 
@@ -29,6 +32,9 @@ image {width: 100%;}
 .fs30 {font-size: 30rpx;}
 
 .fs32 {font-size: 32rpx;}
+
+/* 颜色 */
+.text-666 {color: #666;}
 
 .margin-bottom-sm {margin-bottom: 20rpx;}
 /* flex布局 */

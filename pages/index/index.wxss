@@ -10,7 +10,12 @@ page {
 .list-box .list-item {
   width: 48.5%;
 }
-.scroll-box {height: 500rpx;background-color: #fff;}
+.notice-icon {min-width: 40rpx;}
+.guid-box {background-color: #fff;}
+.guid-box .panel {width: 120rpx;text-align: center;font-size: 26rpx;margin-bottom: 30rpx;}
+.guid-box .panel image {width: 82%;}
+
+.scroll-box {background-color: #fff;margin-top: 20rpx;}
 .scroll-box .scroll-item {
   display: inline-block;
   width: 300rpx;
@@ -18,17 +23,42 @@ page {
 .scroll-box .scroll-item:last-child {
   margin-right: 0;
 }
+.scroll-view_H {
+  white-space: nowrap;
+}
 .scroll-item .text-box .por_name {
   width: 100%;
   white-space: normal;
   color: #333;
+  line-height: 48rpx;
 }
 .scroll-item .text-box .por_name .flag {
   border: 1rpx solid #ff3800;
   padding: 2rpx 5rpx;
   color: #ff3800;
 }
-.scroll-view_H {
-  white-space: nowrap;
+.scroll-item .text-box .price-box {color: #ff3800;}
+.scroll-item .text-box .price-box .now-price {
+  color: #ff3800;
+  font-size: 32rpx;
 }
-.notice-icon {min-width: 40rpx;}
+.scroll-item .text-box .price-box .before-price {
+  font-size: 24rpx;
+  text-decoration: line-through;
+  margin-left: 15rpx;
+}
+.status-box {margin-top: 20rpx;}
+.status-box .num {
+  color: #a1a1a1;
+}
+.status-box .btn{
+  width: 150rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  border-radius: 28rpx;
+  background-color: #d2d2d2;
+  color: #fff;
+}
+.status-box .btn:after {
+  border: none;
+}
