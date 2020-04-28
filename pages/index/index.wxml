@@ -1,0 +1,85 @@
+<!-- index.wxml -->
+<van-tabs active="{{ active }}" sticky>
+  <van-tab title="首页">
+    <view class="swiperBox">
+      <swiper indicator-dots autoplay interval="2000" duration="500" indicator-color="rgba(0, 0, 0, .3)" indicator-active-color="#cccccc">
+        <block wx:for="{{images}}" wx:key="id">
+          <swiper-item class="swiper-item">
+            <image class="" src="{{item.src}}" mode="widthFix"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <van-notice-bar text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。">
+      <text slot="left-icon" class="iconfont iconshengyin notice-icon"></text>
+    </van-notice-bar>
+    <view class="scroll-box">
+      <view class="section-title padding text-bold fs32">热门商品</view>
+      <scroll-view class="scroll-view_H" scroll-x="true" style="width:100%">
+        <view class="scroll-item margin-right-sm">
+          <view class="img-box">
+            <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+          </view>
+          <view class="text-box padding-xs">
+            <view class="por_name fs26">
+              <text class="flag fs24 margin-right-xs">满减</text>Stussy   拼色连帽卫衣 拼色连帽卫衣
+            </view>
+          </view>
+        </view>
+        <view class="scroll-item margin-right-sm">
+          <view class="img-box">
+            <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+          </view>
+        </view>
+        <view class="scroll-item margin-right-sm">
+          <view class="img-box">
+            <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+          </view>
+        </view>
+        <view class="scroll-item margin-right-sm">
+          <view class="img-box">
+            <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+          </view>
+        </view>
+        <view class="scroll-item margin-right-sm">
+          <view class="img-box">
+            <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+          </view>
+        </view>
+        <view class="scroll-item margin-right-sm">
+          <view class="img-box">
+            <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="list-box padding-lr flex-between flex-wrap">
+      <view class="list-item">
+        <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
+                    <view class="por_name">
+              Stussy   拼色连帽卫衣 拼色连帽卫衣
+            </view>
+      </view>
+      <view class="list-item">
+        <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
+      </view>
+      <view class="list-item">
+        <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
+      </view>
+      <view class="list-item">
+        <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
+      </view>
+      <view class="list-item">
+        <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
+      </view>
+      <view class="list-item">
+        <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
+      </view>
+    </view>
+  </van-tab>
+  <van-tab title="标签 2">内容 2</van-tab>
+  <van-tab title="标签 3">内容 3</van-tab>
+  <van-tab title="标签 4">内容 4</van-tab>
+  <van-tab title="标签 5">内容 5</van-tab>
+  <van-tab title="标签 6">内容 6</van-tab>
+</van-tabs>

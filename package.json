@@ -1,0 +1,14 @@
+{
+  "name": "mall",
+  "version": "1.0.0",
+  "description": "npm包",
+  "main": "app.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.2.2"
+  }
+}

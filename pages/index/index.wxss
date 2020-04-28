@@ -1,0 +1,34 @@
+/**index.wxss**/
+page {
+  background-color: rgb(246, 246, 246);
+}
+.van-hairline--top-bottom:after {border-width: 0 !important;}
+.swiperBox {height: 350rpx;}
+.swiperBox swiper {height: 100%;}
+.swiper-item {height: 350rpx;width: 100%;}
+
+.list-box .list-item {
+  width: 48.5%;
+}
+.scroll-box {height: 500rpx;background-color: #fff;}
+.scroll-box .scroll-item {
+  display: inline-block;
+  width: 300rpx;
+}
+.scroll-box .scroll-item:last-child {
+  margin-right: 0;
+}
+.scroll-item .text-box .por_name {
+  width: 100%;
+  white-space: normal;
+  color: #333;
+}
+.scroll-item .text-box .por_name .flag {
+  border: 1rpx solid #ff3800;
+  padding: 2rpx 5rpx;
+  color: #ff3800;
+}
+.scroll-view_H {
+  white-space: nowrap;
+}
+.notice-icon {min-width: 40rpx;}
