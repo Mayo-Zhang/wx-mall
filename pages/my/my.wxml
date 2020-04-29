@@ -1,2 +1,13 @@
 <!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="bg-box padding-top">
+    <view class="info-box">
+        <image class="" src="/images/bg.png" mode="widthFix"></image>
+        <view class="avatar">
+            <image class="" src="/images/avatar.png" mode="widthFix"></image>
+        </view>
+        <view class="btn-box flex-between flex-middle padding-lr-sm">
+            <text class="des fs26">暂无会员卡？完善信息试试</text>
+            <view class="perfect_btn">去完善</view>
+        </view>
+    </view>
+</view>

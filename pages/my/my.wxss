@@ -1,1 +1,35 @@
 /* pages/my/my.wxss */
+.bg-box {
+    width: 100%;
+}
+.bg-box .info-box {
+    position: relative;
+    width: 652rpx;
+    height: 226rpx;
+    background-color: #ff7100;
+    border-radius: 16rpx;
+    margin: 0 auto;
+}
+.bg-box .info-box .avatar {
+    position: absolute;
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    top: 20rpx;
+    left: 20rpx;
+}
+.btn-box {
+    position: absolute;
+    bottom: 20rpx;
+    width: 100%;
+    box-sizing: border-box;
+}
+.btn-box text {
+    color: #f7c881;
+}
+.perfect_btn {
+    width: 100rpx;
+    height: 40rpx;
+    background-color: #fff;
+}

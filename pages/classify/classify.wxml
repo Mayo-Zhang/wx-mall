@@ -1,2 +1,122 @@
-<!--pages/classify/classify.wxml-->
-<text>pages/classify/classify.wxml</text>
+<!-- pages/classify/classify.wxml -->
+<view class="container">
+    <scroll-view class="left" scroll-y="{{true}}">
+        <van-sidebar active-key="{{ activeKey }}">
+            <van-sidebar-item title="运动" />
+            <van-sidebar-item title="时尚" />
+            <van-sidebar-item title="箱包" />
+            <van-sidebar-item title="数码" />
+            <van-sidebar-item title="裤子" />
+            <van-sidebar-item title="特卖" />
+            <van-sidebar-item title="男装" />
+            <van-sidebar-item title="女装" />
+        </van-sidebar>
+    </scroll-view>
+    <scroll-view class="right padding-sm" scroll-y="{{true}}">
+        <view class="section">
+            <view class="section-title fs30 text-bold padding-tb-sm">运动上衣</view>
+            <view class="section-list flex-start flex-wrap">
+                <view class="section-item padding-xs">
+                    <view class="img-box">
+                        <image class="" src="/images/product2.jpg" mode="widthFix"></image>
+                    </view>
+                    <view class="item-name text-center fs24">卫衣</view>
+                </view>
+                <view class="section-item padding-xs">
+                    <view class="img-box">
+                        <image class="" src="/images/product2.jpg" mode="widthFix"></image>
+                    </view>
+                    <view class="item-name text-center fs24">卫衣</view>
+                </view>
+                <view class="section-item padding-xs">
+                    <view class="img-box">
+                        <image class="" src="/images/product2.jpg" mode="widthFix"></image>
+                    </view>
+                    <view class="item-name text-center fs24">卫衣</view>
+                </view>
+                <view class="section-item padding-xs">
+                    <view class="img-box">
+                        <image class="" src="/images/product2.jpg" mode="widthFix"></image>
+                    </view>
+                    <view class="item-name text-center fs24">卫衣</view>
+                </view>
+                <view class="section-item padding-xs">
+                    <view class="img-box">
+                        <image class="" src="/images/product2.jpg" mode="widthFix"></image>
+                    </view>
+                    <view class="item-name text-center fs24">卫衣</view>
+                </view>
+            </view>
+        </view>
+        <view class="section">
+            <view class="section-title fs30 text-bold padding-tb-sm">运动裤子</view>
+            <view class="section-list flex-start flex-wrap">
+                <view class="section-item padding-xs">
+                    <view class="img-box">
+                        <image class="" src="/images/product2.jpg" mode="widthFix"></image>
+                    </view>
+                    <view class="item-name text-center fs24">卫衣</view>
+                </view>
+                <view class="section-item padding-xs">
+                    <view class="img-box">
+                        <image class="" src="/images/product2.jpg" mode="widthFix"></image>
+                    </view>
+                    <view class="item-name text-center fs24">卫衣</view>
+                </view>
+                <view class="section-item padding-xs">
+                    <view class="img-box">
+                        <image class="" src="/images/product2.jpg" mode="widthFix"></image>
+                    </view>
+                    <view class="item-name text-center fs24">卫衣</view>
+                </view>
+                <view class="section-item padding-xs">
+                    <view class="img-box">
+                        <image class="" src="/images/product2.jpg" mode="widthFix"></image>
+                    </view>
+                    <view class="item-name text-center fs24">卫衣</view>
+                </view>
+                <view class="section-item padding-xs">
+                    <view class="img-box">
+                        <image class="" src="/images/product2.jpg" mode="widthFix"></image>
+                    </view>
+                    <view class="item-name text-center fs24">卫衣</view>
+                </view>
+            </view>
+        </view>
+        <view class="section">
+            <view class="section-title fs30 text-bold padding-tb-sm">运动鞋</view>
+            <view class="section-list flex-start flex-wrap">
+                <view class="section-item padding-xs">
+                    <view class="img-box">
+                        <image class="" src="/images/product2.jpg" mode="widthFix"></image>
+                    </view>
+                    <view class="item-name text-center fs24">卫衣</view>
+                </view>
+                <view class="section-item padding-xs">
+                    <view class="img-box">
+                        <image class="" src="/images/product2.jpg" mode="widthFix"></image>
+                    </view>
+                    <view class="item-name text-center fs24">卫衣</view>
+                </view>
+                <view class="section-item padding-xs">
+                    <view class="img-box">
+                        <image class="" src="/images/product2.jpg" mode="widthFix"></image>
+                    </view>
+                    <view class="item-name text-center fs24">卫衣</view>
+                </view>
+                <view class="section-item padding-xs">
+                    <view class="img-box">
+                        <image class="" src="/images/product2.jpg" mode="widthFix"></image>
+                    </view>
+                    <view class="item-name text-center fs24">卫衣</view>
+                </view>
+                <view class="section-item padding-xs">
+                    <view class="img-box">
+                        <image class="" src="/images/product2.jpg" mode="widthFix"></image>
+                    </view>
+                    <view class="item-name text-center fs24">卫衣</view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

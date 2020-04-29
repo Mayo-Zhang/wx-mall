@@ -15,11 +15,14 @@ image {width: 100%;}
 .padding-xs {padding: 10rpx;}
 .padding-sm {padding: 20rpx;}
 .padding {padding: 30rpx;}
+.padding-tb-xs {padding: 10rpx 0;}
+.padding-tb-sm {padding: 20rpx 0;}
 .padding-tb {padding: 30rpx 0;}
-.padding-lr-sm {padding: 0 24rpx;}
+.padding-lr-sm {padding: 0 20rpx;}
 .padding-lr {padding: 0 30rpx;}
 .padding-lr-lg {padding: 0 30rpx;}
 .padding-top-sm {padding-top: 20rpx;}
+.padding-top {padding-top: 30rpx;}
 /* 字体 */
 .text-center {text-align: center;}
 .text-bold {font-weight: bold;}
@@ -41,9 +44,16 @@ image {width: 100%;}
 
 .margin-bottom-sm {margin-bottom: 20rpx;}
 /* flex布局 */
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
 .flex-between {
   display: flex;
   justify-content: space-between;
+}
+
+.flex-middle {
   align-items: center;
 }
 .flex-wrap {

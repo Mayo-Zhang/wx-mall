@@ -4,8 +4,7 @@
     "pages/classify/classify",
     "pages/sunList/sunList",
     "pages/cart/cart",
-    "pages/my/my",
-    "pages/logs/logs"
+    "pages/my/my"
   ],
   "window":{
     "backgroundTextStyle":"light",
