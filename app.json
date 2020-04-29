@@ -2,7 +2,6 @@
   "pages":[
     "pages/index/index",
     "pages/classify/classify",
-    "pages/sunList/sunList",
     "pages/cart/cart",
     "pages/my/my"
   ],
@@ -27,12 +26,6 @@
         "text": "分类",
         "iconPath": "images/tabbar-icon2.png",
         "selectedIconPath": "images/tabbar-icon2-active.png"
-      },
-      {
-        "pagePath": "pages/sunList/sunList",
-        "text": "晒单",
-        "iconPath": "images/tabbar-icon3.png",
-        "selectedIconPath": "images/tabbar-icon3-active.png"
       },
       {
         "pagePath": "pages/cart/cart",

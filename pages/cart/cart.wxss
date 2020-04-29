@@ -1,1 +1,50 @@
 /* pages/cart/cart.wxss */
+page {
+    background-color: #f3f3f3;
+}
+.nono-box {margin: 80rpx 0;}
+.img-box {
+    width: 300rpx;
+    margin: 0 auto;
+}
+.goshop {
+    width: 200rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    border-radius: 30rpx;
+    color: #fff;
+    background-color: #f93d28;
+    margin: 80rpx auto 0;
+}
+/* 购物车 */
+.van-swipe-cell__right {
+    display: inline-block;
+    width: 65px;
+    height: 220rpx;
+    font-size: 30rpx;
+    line-height: 220rpx;
+    color: #fff;
+    text-align: center;
+    background-color: #ee0a24;
+  }
+.cart-box .c_item{
+    background-color: #fff;
+    height: 220rpx;
+}
+.cart-box .iconfont {
+    font-size: 50rpx;
+    color: #ebebeb;
+}
+.cart-box .iconfont.active {
+    color: #f93d28;
+}
+.cart-box .info {
+    height: 100%;
+    box-sizing: border-box;
+}
+.cart-box .pro-thumb {
+    width: 180rpx;
+}
+.cart-box .info .text {
+    flex: 1;
+}

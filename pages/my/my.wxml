@@ -1,5 +1,6 @@
-<!--pages/my/my.wxml-->
-<view class="bg-box padding-top">
+<!-- pages/my/my.wxml -->
+<!-- 个人信息 -->
+<view class="bg-box padding-tb">
     <view class="info-box">
         <image class="" src="/images/bg.png" mode="widthFix"></image>
         <view class="avatar">
@@ -7,7 +8,63 @@
         </view>
         <view class="btn-box flex-between flex-middle padding-lr-sm">
             <text class="des fs26">暂无会员卡？完善信息试试</text>
-            <view class="perfect_btn">去完善</view>
+            <view class="perfect_btn fs24 text-center">去完善</view>
+        </view>
+    </view>
+</view>
+<!-- 订单状态 -->
+<view class="pro-status-box margin-top-sm">
+    <view class="hd fs30 text-bold padding">
+        电商订单
+    </view>
+    <view class="bd flex-start flex-wrap padding-tb-sm">
+        <view class="s_item text-center padding-tb-sm">
+            <view class="iconfont icondaifukuan"></view>
+            <view class="fs24">待付款</view>
+        </view>
+        <view class="s_item text-center padding-tb-sm">
+            <view class="iconfont icondaifahuo"></view>
+            <view class="fs24">待发货</view>
+        </view>
+        <view class="s_item text-center padding-tb-sm">
+            <view class="iconfont icondaishouhuo"></view>
+            <view class="fs24">待收货</view>
+        </view>
+        <view class="s_item text-center padding-tb-sm">
+            <view class="iconfont icontubiao313"></view>
+            <view class="fs24">待评价</view>
+        </view>
+        <view class="s_item text-center padding-tb-sm">
+            <view class="iconfont iconcustom-service"></view>
+            <view class="fs24">售后</view>
+        </view>
+    </view>
+</view>
+<!-- 我的工具 -->
+<view class="tool-box margin-top-sm">
+    <view class="hd fs30 text-bold padding">
+        我的工具
+    </view>
+    <view class="bd flex-start flex-wrap padding-tb-sm">
+        <view class="t_item text-center padding-tb-sm">
+            <view class="iconfont icondaifukuan"></view>
+            <view class="fs24">待付款</view>
+        </view>
+        <view class="t_item text-center padding-tb-sm">
+            <view class="iconfont icondaifahuo"></view>
+            <view class="fs24">待发货</view>
+        </view>
+        <view class="t_item text-center padding-tb-sm">
+            <view class="iconfont icondaishouhuo"></view>
+            <view class="fs24">待收货</view>
+        </view>
+        <view class="t_item text-center padding-tb-sm">
+            <view class="iconfont icontubiao313"></view>
+            <view class="fs24">待评价</view>
+        </view>
+        <view class="t_item text-center padding-tb-sm">
+            <view class="iconfont iconcustom-service"></view>
+            <view class="fs24">售后</view>
         </view>
     </view>
 </view>

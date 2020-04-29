@@ -1,6 +1,10 @@
 /* pages/my/my.wxss */
+page {
+    background-color: #f3f3f3;
+}
 .bg-box {
     width: 100%;
+    background-color: #fff;
 }
 .bg-box .info-box {
     position: relative;
@@ -31,5 +35,36 @@
 .perfect_btn {
     width: 100rpx;
     height: 40rpx;
+    line-height: 40rpx;
+    background-color: #b22530;
+    box-shadow: 0px 0px 15rpx #ffbf29;
+    border-radius: 20rpx;
+    color: #fff;
+}
+
+.pro-status-box {
     background-color: #fff;
+}
+.pro-status-box .hd {
+    border-bottom: 1px solid #f3f3f3;
+}
+.pro-status-box .bd .s_item {
+    width: 25%;
+}
+.pro-status-box .bd .s_item .iconfont {
+    font-size: 60rpx;
+    color: #fe4243;
+}
+.tool-box {
+    background-color: #fff;
+}
+.tool-box .hd {
+    border-bottom: 1px solid #f3f3f3;
+}
+.tool-box .bd .t_item {
+    width: 25%;
+}
+.tool-box .bd .t_item .iconfont {
+    font-size: 60rpx;
+    color: #ffae00;
 }
