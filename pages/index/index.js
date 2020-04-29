@@ -59,5 +59,11 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+  onReachBottom:function(){
+    console.log(1)
+  },
+  onPullDownRefresh: function() {
+    wx.stopPullDownRefresh()
+  },
 })

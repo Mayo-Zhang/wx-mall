@@ -1,210 +1,271 @@
 <!-- index.wxml -->
 <van-tabs active="{{ active }}" sticky>
   <van-tab title="首页">
-    <!-- 轮播图 -->
-    <view class="swiperBox">
-      <swiper indicator-dots autoplay interval="2000" duration="500" indicator-color="rgba(0, 0, 0, .3)" indicator-active-color="#cccccc">
-        <block wx:for="{{images}}" wx:key="id">
-          <swiper-item class="swiper-item">
-            <image class="" src="{{item.src}}" mode="widthFix"></image>
-          </swiper-item>
-        </block>
-      </swiper>
-    </view>
-    <!-- 通知 -->
-    <van-notice-bar text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。">
-      <text slot="left-icon" class="iconfont iconshengyin notice-icon"></text>
-    </van-notice-bar>
-    <!-- 宫格 -->
-    <view class="guid-box padding flex-between flex-wrap">
-      <view class="panel">
-        <image src="../../images/icon1.png" mode="widthFix" />
-        <text class="panel-title">团购</text>
+    <scroll-view bindscrolltolower="upRefresh" scroll-y="{{true}}">
+      <!-- 轮播图 -->
+      <view class="swiperBox">
+        <swiper indicator-dots autoplay interval="2000" duration="500" indicator-color="rgba(0, 0, 0, .3)" indicator-active-color="#cccccc">
+          <block wx:for="{{images}}" wx:key="id">
+            <swiper-item class="swiper-item">
+              <image class="" src="{{item.src}}" mode="widthFix"></image>
+            </swiper-item>
+          </block>
+        </swiper>
       </view>
-      <view class="panel">
-        <image src="../../images/icon2.png" mode="widthFix" />
-        <text class="panel-title">领劵</text>
+      <!-- 通知 -->
+      <van-notice-bar text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。">
+        <text slot="left-icon" class="iconfont iconshengyin notice-icon"></text>
+      </van-notice-bar>
+      <!-- 宫格 -->
+      <view class="guid-box padding flex-between flex-wrap">
+        <view class="panel">
+          <image src="../../images/icon1.png" mode="widthFix" />
+          <text class="panel-title">团购</text>
+        </view>
+        <view class="panel">
+          <image src="../../images/icon2.png" mode="widthFix" />
+          <text class="panel-title">领劵</text>
+        </view>
+        <view class="panel">
+          <image src="../../images/icon3.png" mode="widthFix" />
+          <text class="panel-title">拼团</text>
+        </view>
+        <view class="panel">
+          <image src="../../images/icon4.png" mode="widthFix" />
+          <text class="panel-title">积分</text>
+        </view>
+        <view class="panel">
+          <image src="../../images/icon5.png" mode="widthFix" />
+          <text class="panel-title">砍价</text>
+        </view>
+        <view class="panel">
+          <image src="../../images/icon6.png" mode="widthFix" />
+          <text class="panel-title">推广</text>
+        </view>
+        <view class="panel">
+          <image src="../../images/icon7.png" mode="widthFix" />
+          <text class="panel-title">咨询</text>
+        </view>
+        <view class="panel">
+          <image src="../../images/icon8.png" mode="widthFix" />
+          <text class="panel-title">视频</text>
+        </view>
+        <view class="panel">
+          <image src="../../images/icon9.png" mode="widthFix" />
+          <text class="panel-title">砸金蛋</text>
+        </view>
+        <view class="panel">
+          <image src="../../images/icon10.png" mode="widthFix" />
+          <text class="panel-title">大转盘</text>
+        </view>
       </view>
-      <view class="panel">
-        <image src="../../images/icon3.png" mode="widthFix" />
-        <text class="panel-title">拼团</text>
-      </view>
-      <view class="panel">
-        <image src="../../images/icon4.png" mode="widthFix" />
-        <text class="panel-title">积分</text>
-      </view>
-      <view class="panel">
-        <image src="../../images/icon5.png" mode="widthFix" />
-        <text class="panel-title">砍价</text>
-      </view>
-      <view class="panel">
-        <image src="../../images/icon6.png" mode="widthFix" />
-        <text class="panel-title">推广</text>
-      </view>
-      <view class="panel">
-        <image src="../../images/icon7.png" mode="widthFix" />
-        <text class="panel-title">咨询</text>
-      </view>
-      <view class="panel">
-        <image src="../../images/icon8.png" mode="widthFix" />
-        <text class="panel-title">视频</text>
-      </view>
-      <view class="panel">
-        <image src="../../images/icon9.png" mode="widthFix" />
-        <text class="panel-title">砸金蛋</text>
-      </view>
-      <view class="panel">
-        <image src="../../images/icon10.png" mode="widthFix" />
-        <text class="panel-title">大转盘</text>
-      </view>
-    </view>
-    <!-- 热门商品 -->
-    <view class="scroll-box">
-      <view class="section-title padding text-bold fs32">热门商品</view>
-      <scroll-view class="scroll-view_H" scroll-x="true" style="width:100%">
-        <view class="scroll-item margin-right-sm">
-          <view class="img-box">
-            <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+      <!-- 热门商品 -->
+      <view class="scroll-box">
+        <view class="section-title padding text-bold fs32">热门商品</view>
+        <scroll-view class="scroll-view_H" scroll-x="true" style="width:100%">
+          <view class="scroll-item margin-right-sm">
+            <view class="img-box">
+              <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+            </view>
+            <view class="text-box padding-sm">
+              <view class="por_name fs26">
+                <text class="flag fs24 margin-right-xs">满减</text>
+                Stussy   拼色连帽卫衣 拼色连帽卫衣
+              </view>
+              <view class="price-box fs24">
+                ￥
+                <text class="now-price text-bold">300.00</text>
+                <text class="before-price text-666">￥399.00</text>
+              </view>
+              <view class="status-box flex-between">
+                <text class="num fs20">已团0件</text>
+                <button class="btn fs28">已结束</button>
+              </view>
+            </view>
           </view>
-          <view class="text-box padding-sm">
-            <view class="por_name fs26">
-              <text class="flag fs24 margin-right-xs">满减</text>
-              Stussy   拼色连帽卫衣 拼色连帽卫衣
+          <view class="scroll-item margin-right-sm">
+            <view class="img-box">
+              <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
             </view>
-            <view class="price-box fs24">
+            <view class="text-box padding-sm">
+              <view class="por_name fs26">
+                <text class="flag fs24 margin-right-xs">满减</text>
+                Stussy   拼色连帽卫衣 拼色连帽卫衣
+              </view>
+              <view class="price-box fs24">
+                ￥
+                <text class="now-price text-bold">300.00</text>
+                <text class="before-price text-666">￥399.00</text>
+              </view>
+              <view class="status-box flex-between">
+                <text class="num fs20">已团0件</text>
+                <button class="btn fs28">已结束</button>
+              </view>
+            </view>
+          </view>
+          <view class="scroll-item margin-right-sm">
+            <view class="img-box">
+              <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+            </view>
+            <view class="text-box padding-sm">
+              <view class="por_name fs26">
+                <text class="flag fs24 margin-right-xs">满减</text>
+                Stussy   拼色连帽卫衣 拼色连帽卫衣
+              </view>
+              <view class="price-box fs24">
+                ￥
+                <text class="now-price text-bold">300.00</text>
+                <text class="before-price text-666">￥399.00</text>
+              </view>
+              <view class="status-box flex-between">
+                <text class="num fs20">已团0件</text>
+                <button class="btn fs28">已结束</button>
+              </view>
+            </view>
+          </view>
+          <view class="scroll-item margin-right-sm">
+            <view class="img-box">
+              <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+            </view>
+            <view class="text-box padding-sm">
+              <view class="por_name fs26">
+                <text class="flag fs24 margin-right-xs">满减</text>
+                Stussy   拼色连帽卫衣 拼色连帽卫衣
+              </view>
+              <view class="price-box fs24">
+                ￥
+                <text class="now-price text-bold">300.00</text>
+                <text class="before-price text-666">￥399.00</text>
+              </view>
+              <view class="status-box flex-between">
+                <text class="num fs20">已团0件</text>
+                <button class="btn fs28">已结束</button>
+              </view>
+            </view>
+          </view>
+          <view class="scroll-item margin-right-sm">
+            <view class="img-box">
+              <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+            </view>
+            <view class="text-box padding-sm">
+              <view class="por_name fs26">
+                <text class="flag fs24 margin-right-xs">满减</text>
+                Stussy   拼色连帽卫衣 拼色连帽卫衣
+              </view>
+              <view class="price-box fs24">
+                ￥
+                <text class="now-price text-bold">300.00</text>
+                <text class="before-price text-666">￥399.00</text>
+              </view>
+              <view class="status-box flex-between">
+                <text class="num fs20">已团0件</text>
+                <button class="btn fs28">已结束</button>
+              </view>
+            </view>
+          </view>
+          <view class="scroll-item margin-right-sm">
+            <view class="img-box">
+              <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+            </view>
+            <view class="text-box padding-sm">
+              <view class="por_name fs26">
+                <text class="flag fs24 margin-right-xs">满减</text>
+                Stussy   拼色连帽卫衣 拼色连帽卫衣
+              </view>
+              <view class="price-box fs24">
+                ￥
+                <text class="now-price text-bold">300.00</text>
+                <text class="before-price text-666">￥399.00</text>
+              </view>
+              <view class="status-box flex-between">
+                <text class="num fs20">已团0件</text>
+                <button class="btn fs28">已结束</button>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+      <view class="list-box padding flex-between flex-wrap">
+        <view class="list-item margin-bottom-sm">
+          <view class="img-box">
+            <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
+          </view>
+          <view class="text-box padding-sm padding-sm ">
+            <view class="por_name fs30 text-bold text-ellipsisclamp">Stussy   拼色连帽卫衣 拼色连帽卫衣</view>
+            <view class="price-box padding-top-sm">
               ￥
-              <text class="now-price text-bold">300.00</text>
-              <text class="before-price text-666">￥399.00</text>
-            </view>
-            <view class="status-box flex-between">
-              <text class="num fs20">已团0件</text>
-              <button class="btn fs28">已结束</button>
+              <text class="now-price fs32 margin-right-sm">399.00</text>
+              <text class="before-price">￥300.00</text>
             </view>
           </view>
         </view>
-        <view class="scroll-item margin-right-sm">
+        <view class="list-item margin-bottom-sm">
           <view class="img-box">
-            <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+            <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
           </view>
-          <view class="text-box padding-sm">
-            <view class="por_name fs26">
-              <text class="flag fs24 margin-right-xs">满减</text>
-              Stussy   拼色连帽卫衣 拼色连帽卫衣
-            </view>
-            <view class="price-box fs24">
+          <view class="text-box padding-sm padding-sm ">
+            <view class="por_name fs30 text-bold text-ellipsisclamp">Stussy   拼色连帽卫衣 拼色连帽卫衣</view>
+            <view class="price-box padding-top-sm">
               ￥
-              <text class="now-price text-bold">300.00</text>
-              <text class="before-price text-666">￥399.00</text>
-            </view>
-            <view class="status-box flex-between">
-              <text class="num fs20">已团0件</text>
-              <button class="btn fs28">已结束</button>
+              <text class="now-price fs32 margin-right-sm">399.00</text>
+              <text class="before-price">￥300.00</text>
             </view>
           </view>
         </view>
-        <view class="scroll-item margin-right-sm">
+        <view class="list-item margin-bottom-sm">
           <view class="img-box">
-            <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+            <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
           </view>
-          <view class="text-box padding-sm">
-            <view class="por_name fs26">
-              <text class="flag fs24 margin-right-xs">满减</text>
-              Stussy   拼色连帽卫衣 拼色连帽卫衣
-            </view>
-            <view class="price-box fs24">
+          <view class="text-box padding-sm padding-sm ">
+            <view class="por_name fs30 text-bold text-ellipsisclamp">Stussy   拼色连帽卫衣 拼色连帽卫衣</view>
+            <view class="price-box padding-top-sm">
               ￥
-              <text class="now-price text-bold">300.00</text>
-              <text class="before-price text-666">￥399.00</text>
-            </view>
-            <view class="status-box flex-between">
-              <text class="num fs20">已团0件</text>
-              <button class="btn fs28">已结束</button>
+              <text class="now-price fs32 margin-right-sm">399.00</text>
+              <text class="before-price">￥300.00</text>
             </view>
           </view>
         </view>
-        <view class="scroll-item margin-right-sm">
+        <view class="list-item margin-bottom-sm">
           <view class="img-box">
-            <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+            <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
           </view>
-          <view class="text-box padding-sm">
-            <view class="por_name fs26">
-              <text class="flag fs24 margin-right-xs">满减</text>
-              Stussy   拼色连帽卫衣 拼色连帽卫衣
-            </view>
-            <view class="price-box fs24">
+          <view class="text-box padding-sm padding-sm ">
+            <view class="por_name fs30 text-bold text-ellipsisclamp">Stussy   拼色连帽卫衣 拼色连帽卫衣</view>
+            <view class="price-box padding-top-sm">
               ￥
-              <text class="now-price text-bold">300.00</text>
-              <text class="before-price text-666">￥399.00</text>
-            </view>
-            <view class="status-box flex-between">
-              <text class="num fs20">已团0件</text>
-              <button class="btn fs28">已结束</button>
+              <text class="now-price fs32 margin-right-sm">399.00</text>
+              <text class="before-price">￥300.00</text>
             </view>
           </view>
         </view>
-        <view class="scroll-item margin-right-sm">
+        <view class="list-item margin-bottom-sm">
           <view class="img-box">
-            <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+            <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
           </view>
-          <view class="text-box padding-sm">
-            <view class="por_name fs26">
-              <text class="flag fs24 margin-right-xs">满减</text>
-              Stussy   拼色连帽卫衣 拼色连帽卫衣
-            </view>
-            <view class="price-box fs24">
+          <view class="text-box padding-sm padding-sm ">
+            <view class="por_name fs30 text-bold text-ellipsisclamp">Stussy   拼色连帽卫衣 拼色连帽卫衣</view>
+            <view class="price-box padding-top-sm">
               ￥
-              <text class="now-price text-bold">300.00</text>
-              <text class="before-price text-666">￥399.00</text>
-            </view>
-            <view class="status-box flex-between">
-              <text class="num fs20">已团0件</text>
-              <button class="btn fs28">已结束</button>
+              <text class="now-price fs32 margin-right-sm">399.00</text>
+              <text class="before-price">￥300.00</text>
             </view>
           </view>
         </view>
-        <view class="scroll-item margin-right-sm">
+        <view class="list-item margin-bottom-sm">
           <view class="img-box">
-            <image class="" src="../../images/product2.jpg" mode="widthFix"></image>
+            <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
           </view>
-          <view class="text-box padding-sm">
-            <view class="por_name fs26">
-              <text class="flag fs24 margin-right-xs">满减</text>
-              Stussy   拼色连帽卫衣 拼色连帽卫衣
-            </view>
-            <view class="price-box fs24">
+          <view class="text-box padding-sm padding-sm ">
+            <view class="por_name fs30 text-bold text-ellipsisclamp">Stussy   拼色连帽卫衣 拼色连帽卫衣</view>
+            <view class="price-box padding-top-sm">
               ￥
-              <text class="now-price text-bold">300.00</text>
-              <text class="before-price text-666">￥399.00</text>
-            </view>
-            <view class="status-box flex-between">
-              <text class="num fs20">已团0件</text>
-              <button class="btn fs28">已结束</button>
+              <text class="now-price fs32 margin-right-sm">399.00</text>
+              <text class="before-price">￥300.00</text>
             </view>
           </view>
         </view>
-      </scroll-view>
-    </view>
-    <view class="list-box padding-lr flex-between flex-wrap">
-      <view class="list-item">
-        <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
-        <view class="por_name">Stussy   拼色连帽卫衣 拼色连帽卫衣</view>
       </view>
-      <view class="list-item">
-        <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
-      </view>
-      <view class="list-item">
-        <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
-      </view>
-      <view class="list-item">
-        <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
-      </view>
-      <view class="list-item">
-        <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
-      </view>
-      <view class="list-item">
-        <image class="" src="../../images/product1.jpg" mode="widthFix"></image>
-      </view>
-    </view>
+    </scroll-view>
   </van-tab>
   <van-tab title="标签 2">内容 2</van-tab>
   <van-tab title="标签 3">内容 3</van-tab>

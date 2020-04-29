@@ -10,6 +10,8 @@ image {width: 100%;}
 /* padding，margin值 */
 .margin-right-xs {margin-right: 10rpx;}
 .margin-right-sm {margin-right: 20rpx;}
+.margin-top-sm {margin-top: 20rpx;}
+.margin-bottom-sm {margin-bottom: 20rpx;}
 .padding-xs {padding: 10rpx;}
 .padding-sm {padding: 20rpx;}
 .padding {padding: 30rpx;}
@@ -17,6 +19,7 @@ image {width: 100%;}
 .padding-lr-sm {padding: 0 24rpx;}
 .padding-lr {padding: 0 30rpx;}
 .padding-lr-lg {padding: 0 30rpx;}
+.padding-top-sm {padding-top: 20rpx;}
 /* 字体 */
 .text-center {text-align: center;}
 .text-bold {font-weight: bold;}

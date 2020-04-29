@@ -14,11 +14,12 @@ page {
 .guid-box {background-color: #fff;}
 .guid-box .panel {width: 120rpx;text-align: center;font-size: 26rpx;margin-bottom: 30rpx;}
 .guid-box .panel image {width: 82%;}
-
+/* 热门商品 */
 .scroll-box {background-color: #fff;margin-top: 20rpx;}
 .scroll-box .scroll-item {
   display: inline-block;
   width: 300rpx;
+  vertical-align: top;
 }
 .scroll-box .scroll-item:last-child {
   margin-right: 0;
@@ -61,4 +62,23 @@ page {
 }
 .status-box .btn:after {
   border: none;
+}
+/* 商品列表 */
+.list-box {
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+.list-box .list-item {
+  border-radius: 15rpx;
+  overflow: hidden;
+  box-shadow:0px 2px 10px 0px rgba(41,61,95,0.1);
+}
+.list-item .price-box {
+  font-size: 24rpx;
+  color: #ff3800;
+}
+.list-item .price-box .before-price {
+  color: #a1a1a1;
+  font-size: 24rpx;
+  text-decoration: line-through;
 }
