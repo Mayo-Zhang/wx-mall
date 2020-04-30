@@ -128,28 +128,43 @@ Page({
   },
   // 全选
   chooseAll: function () {
+    
+    let selectAll = this.data.selectAll;
+    console.log(selectAll)
     let list = this.data.list;
-    for (let i = 0; i < list.length; i++) {
-      if (!list[i].checked) {
-        list[i].checked = !list[i].checked;
-      }
-    };
-    this.setData({
-      selectAll:true,
-      list:list
-    })
+    if (selectAll) {
+      for (let i = 0; i < list.length; i++) {
+        list[i].checked = false;
+      };
+      this.setData({
+        selectAll:false,
+        list:list
+      })
+    } else {
+      for (let i = 0; i < list.length; i++) {
+        if (!list[i].checked) {
+          list[i].checked = !list[i].checked;
+        }
+      };
+      this.setData({
+        selectAll:true,
+        list:list
+      })
+    }
   },
   checkChoose: function () {
     let list = this.data.list;
-    var arr = [1,2,3,4,5];
-    let result = arr.some(item => {
-      console.log(item)
-      item > 3
+    let result = list.some((item,index) => {
+      return item.checked == false
     })
     console.log(result)
     if (!result) {
       this.setData({
         selectAll:true,
+      })
+    } else {
+      this.setData({
+        selectAll:false,
       })
     }
   }
