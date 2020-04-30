@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "van-swipe-cell": "/miniprogram_npm/miniprogram_npm/@vant/weapp/swipe-cell/index"
+    "van-swipe-cell": "/miniprogram_npm/miniprogram_npm/@vant/weapp/swipe-cell/index",
+    "van-submit-bar": "/miniprogram_npm/miniprogram_npm/@vant/weapp/submit-bar/index"
   },
   "navigationBarTitleText": "购物车"
 }

@@ -2,6 +2,9 @@
 page {
     background-color: #f3f3f3;
 }
+.container {
+    padding-bottom: 60px;
+}
 .nono-box {margin: 80rpx 0;}
 .img-box {
     width: 300rpx;
@@ -30,6 +33,7 @@ page {
 .cart-box .c_item{
     background-color: #fff;
     height: 220rpx;
+    border-bottom: 1px solid #eee;
 }
 .cart-box .iconfont {
     font-size: 50rpx;
@@ -47,4 +51,34 @@ page {
 }
 .cart-box .info .text {
     flex: 1;
+}
+.cart-box .info .other .price {
+    color: #f93d28;
+}
+.cart-box .info .other .count-box {
+    width: 150rpx;
+    height: 50rpx;
+    border-radius: 25rpx;
+    border: 1rpx solid #ccc;
+}
+.cart-box .info .other .count-box .btn {
+    width: 42rpx;
+    height: 42rpx;
+    line-height: 42rpx;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    margin: 0 4rpx;
+    color: #999;
+}
+.cart-box .info .other .count-box input {
+    flex: 1;
+    text-align: center;
+}
+.all .iconfont {
+    font-size: 50rpx;
+    color: #ebebeb;
+}
+.all .iconfont.active {
+    color: #f93d28;
 }
